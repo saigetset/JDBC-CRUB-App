@@ -30,7 +30,7 @@ public class JDBCUtil {
 		//Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sai","root","root");
 		
 		//Getting all the parameters from application.properties
-		FileInputStream fis = new FileInputStream("D:\\AdvJavaPrograms\\AdvJavaPrograms\\src\\resources\\application.properties");
+		FileInputStream fis = new FileInputStream("D:\AdvJavaPrograms\JDBCCRUDApp\src\resources\application.properties");
 		Properties props = new Properties();
 		props.load(fis);
 		Connection con = DriverManager.getConnection(props.getProperty("url"), props.getProperty("user"), props.getProperty("password"));
